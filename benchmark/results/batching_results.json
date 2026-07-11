@@ -1,0 +1,5 @@
+ "batch_1": {"latency_ms": 544.12, "throughput_obs_per_sec": 1.84},
+  "batch_2": {"latency_ms": 1059.63, "throughput_obs_per_sec": 1.89},
+  "batch_4": {"latency_ms": 2039.46, "throughput_obs_per_sec": 1.96},
+  "batch_8": {"latency_ms": 3985.66, "throughput_obs_per_sec": 2.01},
+  "batch_16": "aborted - caused system-wide memory pressure, manually terminated"
