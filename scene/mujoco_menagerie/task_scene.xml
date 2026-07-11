@@ -1,0 +1,22 @@
+<mujoco model="so_arm100_task">
+  <include file="scene.xml"/>
+
+  <asset>
+    <material name="cube_mat" rgba="0.85 0.15 0.15 1"/>
+    <material name="target_mat" rgba="0.15 0.75 0.25 0.5"/>
+  </asset>
+
+  <worldbody>
+    <camera name="realsense" pos="0.5 0 0.5" xyaxes="0 1 0 -0.5 0 0.8" fovy="50"/>
+
+    <geom name="table" type="box" size="0.4 0.4 0.02" pos="0.2 0 -0.02" rgba="0.7 0.7 0.65 1"/>
+
+    <geom name="target_zone" type="cylinder" size="0.05 0.001" pos="0.05 -0.15 0.001"
+          material="target_mat" contype="0" conaffinity="0"/>
+
+    <body name="cube" pos="0.02 -0.20 0.03">
+  <freejoint name="cube_free"/>
+      <geom name="cube_geom" type="box" size="0.02 0.02 0.02" material="cube_mat" mass="0.05"/>
+    </body>
+  </worldbody>
+</mujoco>
