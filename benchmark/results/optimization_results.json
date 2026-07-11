@@ -1,0 +1,3 @@
+  "baseline_p50_ms": 3.645,
+  "optimized_p50_ms": 3.467,
+  "speedup": 1.051
