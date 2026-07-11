@@ -1,0 +1,15 @@
+{
+  "model_load_time_s": 23.883,
+  "latency_mean_ms": 14.4,
+  "latency_p50_ms": 3.58,
+  "latency_p95_ms": 4.19,
+  "latency_std_ms": 75.14,
+  "throughput_inferences_per_sec": 42.863,
+  "peak_allocated_memory_mb": 1153.3,
+  "peak_driver_memory_mb": 1798.5,
+  "memory_note": "Apple Silicon uses unified memory (shared CPU/GPU pool), not discrete VRAM",
+  "gpu_utilization_note": "macOS does not expose per-process GPU utilization via torch/MPS. Run alongside: sudo powermetrics --samplers gpu_power -i 1000 -n 5 during inference to read GPU active residency % manually.",
+  "assumed_power_draw_w": 12.0,
+  "cost_per_1k_inferences_usd": 7e-06,
+  "cost_methodology_note": "Estimated from assumed 12.0W sustained draw x measured mean latency, at $0.15/kWh. Not measured directly \u2014 M3 Air has no per-process power sensor exposed to userland. For rigor, measure via 'sudo powermetrics' during a sustained inference loop and substitute the real wattage here."
+}
